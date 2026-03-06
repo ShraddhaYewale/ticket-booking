@@ -1,4 +1,4 @@
-
+<img width="1536" height="1024" alt="ChatGPT Image Mar 6, 2026, 10_36_37 PM" src="https://github.com/user-attachments/assets/4b01969a-4b46-4127-9697-e136dcf4a2c6" /><img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ef20774d-a2c4-456d-80b8-2ab09e65479b" /><img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/cafdae03-ba5c-41fb-8c0b-e0e5331313b0" />
 # 🚆 Train Ticket Booking System (Java Console Application)
 
 A simple **Train Ticket Booking System** built using **Core Java** that simulates the basic functionality of railway reservation systems.
@@ -231,51 +231,9 @@ This project helps understand:
 
 
 1️⃣ UML Class Diagram
-+------------------+
-|       App        |
-+------------------+
-| main()           |
-+------------------+
-          |
-          ▼
-+---------------------------+
-|    UserBookingService     |
-+---------------------------+
-| - userList : List<User>   |
-| - trains : List<Train>    |
-| - user : User             |
-+---------------------------+
-| loginUser()               |
-| signUp()                  |
-| getTrains()               |
-| fetchBookings()           |
-| bookTrainSeat()           |
-| cancelBooking()           |
-+---------------------------+
-          |
-          ▼
-+------------------+      +------------------+
-|      User        |      |      Train       |
-+------------------+      +------------------+
-| name             |      | trainId          |
-| password         |      | trainNo          |
-| hashedPassword   |      | seats            |
-| ticketsBooked    |      | stationTimes     |
-| userId           |      | stations         |
-+------------------+      +------------------+
-| printTickets()   |      | getSeats()       |
-+------------------+      +------------------+
-          |
-          ▼
-+------------------+
-|      Ticket      |
-+------------------+
-| ticketId         |
-| trainId          |
-| row              |
-| column           |
-+------------------+
-        
+
+        <img width="1536" height="1024" alt="ChatGPT Image Mar 6, 2026, 10_36_37 PM" src="https://github.com/user-attachments/assets/390f2687-62b1-42d2-b846-b7e36cd40453" />
+
 Output :Running Train Booking System
 
 Choose option
