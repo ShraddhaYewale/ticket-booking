@@ -230,81 +230,52 @@ This project helps understand:
 
 
 
-1️⃣ UML Class Diagram:
-+----------------------+
-|         App          |
-+----------------------+
-| - scanner: Scanner   |
-| - option: int        |
-+----------------------+
-| + main()             |
-+----------+-----------+
-           |
-           v
-+------------------------------+
-|      UserBookingService      |
-+------------------------------+
-| - userList : List<User>      |
-| - trains : List<Train>       |
-| - user : User                |
-+------------------------------+
-| + signUp(User)               |
-| + loginUser()                |
-| + fetchBookings()            |
-| + cancelBooking(ticketId)    |
-| + getTrains(src,dest)        |
-| + fetchSeats(train)          |
-| + bookTrainSeat(train,r,c)   |
-+-------------+----------------+
-              |
-     --------------------
-     |                  |
-     v                  v
-
-+----------------+     +----------------+
-|      User      |     |      Train     |
-+----------------+     +----------------+
-| - name         |     | - trainId      |
-| - password     |     | - trainNo      |
-| - hashedPass   |     | - seats        |
-| - userId       |     | - stations     |
-| - ticketsBooked|     | - stationTimes |
-+----------------+     +----------------+
-| +printTickets()|     | +getSeats()    |
-+-------+--------+     | +getStations() |
-        |              +--------+-------+
-        v                       |
-+--------------+                |
-|    Ticket    |                |
-+--------------+                |
-| - ticketId   |                |
-| - trainId    |                |
-| - row        |                |
-| - column     |                |
-+--------------+                |
-                                v
-                       +----------------+
-                       |  TrainService  |
-                       +----------------+
-                       | - trains       |
-                       +----------------+
-                       | +getTrains()   |
-                       | +addTrain()    |
-                       +----------------+
-
-             +
-             |
-             v
-
-     +----------------------+
-     |   UserServiceUtil    |
-     +----------------------+
-     | +hashPassword()      |
-     | +checkPassword()     |
-     +----------------------+
-
-
-
+1️⃣ UML Class Diagram
++------------------+
+|       App        |
++------------------+
+| main()           |
++------------------+
+          |
+          ▼
++---------------------------+
+|    UserBookingService     |
++---------------------------+
+| - userList : List<User>   |
+| - trains : List<Train>    |
+| - user : User             |
++---------------------------+
+| loginUser()               |
+| signUp()                  |
+| getTrains()               |
+| fetchBookings()           |
+| bookTrainSeat()           |
+| cancelBooking()           |
++---------------------------+
+          |
+          ▼
++------------------+      +------------------+
+|      User        |      |      Train       |
++------------------+      +------------------+
+| name             |      | trainId          |
+| password         |      | trainNo          |
+| hashedPassword   |      | seats            |
+| ticketsBooked    |      | stationTimes     |
+| userId           |      | stations         |
++------------------+      +------------------+
+| printTickets()   |      | getSeats()       |
++------------------+      +------------------+
+          |
+          ▼
++------------------+
+|      Ticket      |
++------------------+
+| ticketId         |
+| trainId          |
+| row              |
+| column           |
++------------------+
+        
 Output :Running Train Booking System
 
 Choose option
