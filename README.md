@@ -3,7 +3,6 @@
 
 A simple **Train Ticket Booking System** built using **Core Java** that simulates the basic functionality of railway reservation systems.
 The application allows users to **sign up, log in, search trains, book seats, view bookings, and cancel tickets** through a console interface.
-
 This project demonstrates the use of **Object-Oriented Programming (OOP), file-based data storage, and modular service design** in Java.
 
 ---
